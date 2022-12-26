@@ -1,0 +1,242 @@
+
+.bg-custom {
+	background-color: #ff8080;
+}
+
+
+.navbar .nav-item:hover .nav-link {
+	background-color: #f2f2f2;
+	color: #303f9f;
+	border-radius: 15px;  
+}
+#b1{
+	color: red;
+}
+
+a.button{
+ display: inline-block;
+ padding: 20px 40px;
+ background-color:white;
+ text-decoration: none;
+ border-radius: 20px;
+}
+a.button.FCBayernMunchen{
+	background: #ffb3b3;
+	float: left;
+	height: 100px;
+	width: 350px;
+}
+
+a.button.FCBayernMunchen:hover{
+background-color:#ff6666;
+}
+
+a.button.RBLeipzig {
+	background-color: #d9d9d9;
+	float: right;
+	height: 100px;
+	width: 350px;
+}
+a.button.RBLeipzig:hover {
+	background-color: #f2f2f2;
+}
+
+a.button.BorussiaDortmund {
+	background-color: #ffffb3;
+	height: 100px;
+	width: 350px;
+}
+
+a.button.BorussiaDortmund:hover{
+	background-color:  #ffff1a;
+}
+
+a.button.VfLWolfsburg{
+	background-color:  #b3ffd9;
+	height: 100px;
+	width: 350px;
+}
+
+a.button.VfLWolfsburg:hover{
+	
+	background-color: #00ff00;
+}
+
+a.button.EintrachtFrankfurt {
+	background-color: #c2c2d6;
+	height: 100px;
+	width: 350px;
+}
+a.button.EintrachtFrankfurt:hover{
+  background-color: black;
+}
+a.button.Bayer04Leverkusen{
+	background-color: #ffb3b3;
+	height: 100px;
+	width: 350px;
+}
+a.button.Bayer04Leverkusen:hover{
+	background-color: red;
+}
+.div_left{	
+	float: left;
+	
+}
+
+.div_right{
+
+	position: relative; right: -500px;
+}
+.div_none{
+	
+	position: relative; left: -330px;
+}
+
+.div_left.div_top{
+	position: relative; top: 100px;
+}
+
+.div_none.div_top{
+	position: relative; left: 80px; top: 100px;
+}
+.div_right.div_top{
+	position: relative; left: 850px;
+}
+
+
+/* ----------------------------------navbar2----------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+i {
+	margin-right: 10px;
+}
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo{
+	padding: 25px;
+	color: 	 #f2f2f2;
+}
+.navbar-mainbg{
+	background-color: #ff1a1a;
+	padding: 0px;
+}
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #ff1a1a;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	
+	position:absolute;
+	
+	transition-duration:0.6s;
+	background-color: #f2f2f2;
+	
+	margin-top: 2px;
+}
+
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
+      
+    
